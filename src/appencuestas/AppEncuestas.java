@@ -71,7 +71,6 @@ public class AppEncuestas extends Application {
             System.exit(0);
         });
          hboxTitle= new  HBox();
-         //hboxTitle.setId("titleID");
          hboxTitle.setPadding( new Insets(50,0, 0, 0));
          hboxTitle.setMargin(title, new Insets(0, 50, 0, 50));
          hboxTitle.setMargin(btnSalir, new Insets(0, 50, 0, 50));
@@ -83,7 +82,6 @@ public class AppEncuestas extends Application {
         Button health = new Button("Health");
         health.setId("mainButton");
         health.setGraphic(imgViewHelath);
-        //health.setStyle("-fx-font-size: 24;");
         health.setMaxWidth(300);
         health.setMaxHeight(220);
         health.setDefaultButton(true);
@@ -94,7 +92,7 @@ public class AppEncuestas extends Application {
         Button sports = new Button("Sports");
         sports.setId("mainButton");
         sports.setGraphic(imgViewSport);
-       // sports.setStyle("-fx-font-size: 24;");
+       
         sports.setDefaultButton(true);
         sports.setOnAction((ActionEvent t) -> { sportApp.sportScreen(scene,borderPane,primaryStage);});
         sports.setPadding(new Insets(50, 50, 50, 50));
@@ -103,7 +101,7 @@ public class AppEncuestas extends Application {
         Button academy = new Button("Academy");
         academy.setId("mainButton");
         academy.setGraphic(imgViewAcademy);
-        //academy.setStyle("-fx-font-size: 24;");
+     
         academy.setDefaultButton(true);
         academy.setOnAction((ActionEvent t) -> {AcademiaApp.academiaScreen(scene,borderPane,primaryStage);});
         academy.setPadding(new Insets(50, 50, 50, 50));
