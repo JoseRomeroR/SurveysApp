@@ -110,7 +110,6 @@ public class AppEncuestas extends Application {
         Button population = new Button("Population");
         population.setId("mainButton");
         population.setGraphic(imgViewPopulation);
-        //population.setStyle("-fx-font-size: 24;");
         population.setDefaultButton(true);
         population.setOnAction((ActionEvent t) -> { PoblacionApp.poblacionScreen(scene,borderPane,primaryStage);  });
         population.setPadding(new Insets(50, 50, 50, 50));
